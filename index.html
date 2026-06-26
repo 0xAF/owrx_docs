@@ -1693,7 +1693,8 @@ http://localhost:8073/
 If you have a Raspberry Pi, you can use
 <A HREF="https://github.com/luarvique/openwebrx/releases/">pre-built SD card images</A> 
 containing a clean OpenWebRX+ installation with all the optional 
-packages. The 32bit image should run on all devices except for RPI1 and 
+packages. The <DEL>32bit image</DEL> (<B>DEPRECATED</B>) should run on
+all devices except for RPI1 and
 RPI5. The 64bit image should run on all devices except for RPI1, RPI2, 
 and RPIZero1. Both images support common SDR device models out of the 
 box. For example, both RTL-SDR and SDRPlay devices have been confirmed 
@@ -1702,8 +1703,10 @@ to work with no additional modifications to the images.
 <P>
 To flash image to an SD card, run
 <A HREF="https://www.raspberrypi.com/software/">Raspberry Pi Imager</A>
-and select <I>"USE CUSTOM"</I> option from the <I>"Operating System | 
-CHOOSE OS"</I> menu. <B>Prior to flashing SD card, you can tell RPI 
+and click <I>"APP OPTIONS"</I> button, then click <I>"EDIT"</I> button on
+<I>"Content repository"</I>. Select <I>"Use custom file"</I> option, then
+browse to the json file you downloaded from the releases page.
+<B>Prior to flashing SD card, you can tell RPI
 Imager to set up the root password.</B> If you skip this step, you will 
 be asked to create root password on the first startup.
 </P>
